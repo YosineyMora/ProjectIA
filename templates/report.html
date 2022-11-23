@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        div {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid rgb(0, 90, 128);
+            padding: 50px;
+            margin: 20px;
+        }
+
+        textarea {
+            resize: none;
+            display: inline-block;
+            vertical-align: middle;
+            height: 50px;
+        }
+
+        input {
+            align-items: center;
+            border: 2px solid #0099CC;
+            background: transparent;
+            border-radius: 6px;
+        }
+
+        .input:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        div.center {
+            text-align: center;
+        }
+
+        button {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            color: #709680;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #9ab09a;
+            border-color: #d8d8d8;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 60px 5px;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Project</title>
+    <link rel="stylesheet" href="reports.css" />
+</head>
+
+<body>
+
+
+    <button><a href="/" data-toggle="tab">Volver</a></button>
+    <h1>Generar Reportes</h1>
+
+    <div>
+        <h2>Individual</h2>
+        <form action="/person" method="post">
+            <input name="nameP"></input>
+            <input type="submit" value="Generar" />
+        </form>
+        <form action="/personAll" method="post">
+            <input type="submit" value="Generar para Todos" />
+        </form>
+
+
+    </div>
+
+    <div>
+        <h2>Grupal</h2>
+        <form action="/groupAll" method="post">
+            <input type="submit" value="Generar" />
+        </form>
+    </div>
+
+</body>
+
+</html>

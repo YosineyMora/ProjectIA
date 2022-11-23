@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteccion</title>
+    <style>
+        button {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            color: #709680;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #9ab09a;
+            border-color: #d8d8d8;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 60px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button><a href="/" data-toggle="tab">Volver</a></button>
+    <h1>Detección por medio de Videos</h1>
+    <div>
+        <h2>Seleccione el video a realizar la detección</h2>
+        <form action="/videoA" method="POST" enctype="multipart/form-data">
+            <input name="videoD" type="file" ></input>
+            <input type="submit" value="Generar" />
+            <!-- <img src="http://localhost:5000/video_a" alt="Video" /> -->
+        </form>
+    </div>
+
+</body>
+
+</html>
